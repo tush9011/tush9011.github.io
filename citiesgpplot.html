@@ -1,0 +1,229 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//dimplejs.org/dist/dimple.v2.1.0.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 700px;
+      height: 475px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart141c203e242a' class = 'rChart dimple'></div>    
+    <script type="text/javascript">
+  var opts = {
+ "dom": "chart141c203e242a",
+"width":    700,
+"height":    475,
+"xAxis": {
+ "type": "addCategoryAxis",
+"showPercent": false,
+"orderRule": "kmeansdata.cluster" 
+},
+"yAxis": {
+ "type": "addCategoryAxis",
+"showPercent": false 
+},
+"zAxis": [],
+"colorAxis": [],
+"defaultColors": [],
+"layers": [],
+"legend": [],
+"x": "City",
+"y": "kmeansdata.cluster",
+"groups": "kmeansdata.cluster",
+"type": "bar",
+"bounds": {
+ "x":     50,
+"y":     10,
+"width":    600,
+"height":    300 
+},
+"id": "chart141c203e242a" 
+},
+    data = [{"City":"AGRA","Rape":38,"Kidnapping":333,"DowryDeaths":36,"AssaultWithIntentToOutrageModesty":207,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":367,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":4,"DowryProhibitionAct":4,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"AHMEDABAD","Rape":100,"Kidnapping":367,"DowryDeaths":11,"AssaultWithIntentToOutrageModesty":162,"InsultToModesty":3,"CrueltyByHusbandOrHisRelatives":802,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":14,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"ALLAHABAD","Rape":20,"Kidnapping":103,"DowryDeaths":14,"AssaultWithIntentToOutrageModesty":96,"InsultToModesty":1,"CrueltyByHusbandOrHisRelatives":176,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"AMRITSAR","Rape":34,"Kidnapping":78,"DowryDeaths":3,"AssaultWithIntentToOutrageModesty":45,"InsultToModesty":2,"CrueltyByHusbandOrHisRelatives":150,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":9,"DowryProhibitionAct":1,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":1},{"City":"ASANSOL","Rape":16,"Kidnapping":104,"DowryDeaths":28,"AssaultWithIntentToOutrageModesty":158,"InsultToModesty":1,"CrueltyByHusbandOrHisRelatives":490,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":2,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"BANGALORE","Rape":104,"Kidnapping":708,"DowryDeaths":57,"AssaultWithIntentToOutrageModesty":680,"InsultToModesty":57,"CrueltyByHusbandOrHisRelatives":490,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":213,"DowryProhibitionAct":774,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":4},{"City":"BHOPAL","Rape":178,"Kidnapping":290,"DowryDeaths":16,"AssaultWithIntentToOutrageModesty":289,"InsultToModesty":13,"CrueltyByHusbandOrHisRelatives":295,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":2,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"CHENNAI","Rape":65,"Kidnapping":36,"DowryDeaths":10,"AssaultWithIntentToOutrageModesty":59,"InsultToModesty":157,"CrueltyByHusbandOrHisRelatives":302,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":249,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":4,"X":0,"kmeansdata.cluster":2},{"City":"COIMBATORE","Rape":5,"Kidnapping":14,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":8,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":63,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":23,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":1},{"City":"DELHI (CITY)","Rape":1813,"Kidnapping":6016,"DowryDeaths":127,"AssaultWithIntentToOutrageModesty":3810,"InsultToModesty":1111,"CrueltyByHusbandOrHisRelatives":2840,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":8,"DowryProhibitionAct":11,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":3},{"City":"DHANBAD","Rape":13,"Kidnapping":39,"DowryDeaths":9,"AssaultWithIntentToOutrageModesty":18,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":31,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":48,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":1},{"City":"FARIDABAD","Rape":101,"Kidnapping":384,"DowryDeaths":20,"AssaultWithIntentToOutrageModesty":94,"InsultToModesty":16,"CrueltyByHusbandOrHisRelatives":302,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":4,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"HYDERABAD","Rape":126,"Kidnapping":374,"DowryDeaths":22,"AssaultWithIntentToOutrageModesty":393,"InsultToModesty":87,"CrueltyByHusbandOrHisRelatives":1289,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":108,"DowryProhibitionAct":26,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":4},{"City":"INDORE","Rape":185,"Kidnapping":439,"DowryDeaths":23,"AssaultWithIntentToOutrageModesty":301,"InsultToModesty":31,"CrueltyByHusbandOrHisRelatives":182,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"JABALPUR","Rape":113,"Kidnapping":359,"DowryDeaths":17,"AssaultWithIntentToOutrageModesty":221,"InsultToModesty":31,"CrueltyByHusbandOrHisRelatives":163,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":9,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"JAIPUR","Rape":263,"Kidnapping":653,"DowryDeaths":33,"AssaultWithIntentToOutrageModesty":455,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":1155,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":40,"DowryProhibitionAct":1,"IndecentRepresentationOfWomenPAct":10,"X":0,"kmeansdata.cluster":4},{"City":"JAMSHEDPUR","Rape":36,"Kidnapping":64,"DowryDeaths":8,"AssaultWithIntentToOutrageModesty":30,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":85,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":168,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":1},{"City":"KANPUR","Rape":19,"Kidnapping":233,"DowryDeaths":27,"AssaultWithIntentToOutrageModesty":129,"InsultToModesty":1,"CrueltyByHusbandOrHisRelatives":440,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":7,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"KOCHI","Rape":64,"Kidnapping":4,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":158,"InsultToModesty":18,"CrueltyByHusbandOrHisRelatives":166,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":44,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":4,"X":0,"kmeansdata.cluster":2},{"City":"KOLKATA","Rape":36,"Kidnapping":341,"DowryDeaths":12,"AssaultWithIntentToOutrageModesty":577,"InsultToModesty":286,"CrueltyByHusbandOrHisRelatives":1141,"ImportationOfGirlsFromForeignCountry":2,"ImmoralTrafficPAct":25,"DowryProhibitionAct":1,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":4},{"City":"LUCKNOW","Rape":52,"Kidnapping":348,"DowryDeaths":31,"AssaultWithIntentToOutrageModesty":229,"InsultToModesty":2,"CrueltyByHusbandOrHisRelatives":562,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":10,"DowryProhibitionAct":34,"IndecentRepresentationOfWomenPAct":1,"X":0,"kmeansdata.cluster":5},{"City":"LUDHIANA","Rape":111,"Kidnapping":246,"DowryDeaths":5,"AssaultWithIntentToOutrageModesty":98,"InsultToModesty":19,"CrueltyByHusbandOrHisRelatives":158,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":17,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":1,"X":0,"kmeansdata.cluster":2},{"City":"MADURAI","Rape":6,"Kidnapping":27,"DowryDeaths":1,"AssaultWithIntentToOutrageModesty":22,"InsultToModesty":1,"CrueltyByHusbandOrHisRelatives":69,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":50,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":1},{"City":"MEERUT","Rape":40,"Kidnapping":233,"DowryDeaths":20,"AssaultWithIntentToOutrageModesty":217,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":399,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"MUMBAI","Rape":607,"Kidnapping":541,"DowryDeaths":22,"AssaultWithIntentToOutrageModesty":1626,"InsultToModesty":363,"CrueltyByHusbandOrHisRelatives":563,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":58,"DowryProhibitionAct":2,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":4},{"City":"NAGPUR","Rape":113,"Kidnapping":145,"DowryDeaths":10,"AssaultWithIntentToOutrageModesty":279,"InsultToModesty":25,"CrueltyByHusbandOrHisRelatives":234,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":24,"DowryProhibitionAct":4,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"NASIK","Rape":28,"Kidnapping":59,"DowryDeaths":3,"AssaultWithIntentToOutrageModesty":101,"InsultToModesty":3,"CrueltyByHusbandOrHisRelatives":200,"ImportationOfGirlsFromForeignCountry":1,"ImmoralTrafficPAct":2,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"PATNA","Rape":54,"Kidnapping":599,"DowryDeaths":41,"AssaultWithIntentToOutrageModesty":0,"InsultToModesty":56,"CrueltyByHusbandOrHisRelatives":404,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":29,"DowryProhibitionAct":92,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"PUNE","Rape":189,"Kidnapping":228,"DowryDeaths":20,"AssaultWithIntentToOutrageModesty":454,"InsultToModesty":98,"CrueltyByHusbandOrHisRelatives":391,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":61,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"RAJKOT","Rape":17,"Kidnapping":99,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":31,"InsultToModesty":5,"CrueltyByHusbandOrHisRelatives":301,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":1,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"SURAT","Rape":94,"Kidnapping":263,"DowryDeaths":2,"AssaultWithIntentToOutrageModesty":70,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":405,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":4,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"VADODARA","Rape":23,"Kidnapping":93,"DowryDeaths":1,"AssaultWithIntentToOutrageModesty":109,"InsultToModesty":8,"CrueltyByHusbandOrHisRelatives":306,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"VARANASI","Rape":27,"Kidnapping":97,"DowryDeaths":11,"AssaultWithIntentToOutrageModesty":116,"InsultToModesty":3,"CrueltyByHusbandOrHisRelatives":180,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2},{"City":"VIJAYAWADA","Rape":64,"Kidnapping":42,"DowryDeaths":10,"AssaultWithIntentToOutrageModesty":279,"InsultToModesty":212,"CrueltyByHusbandOrHisRelatives":642,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":120,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":5},{"City":"VISHAKHAPATNAM","Rape":84,"Kidnapping":130,"DowryDeaths":13,"AssaultWithIntentToOutrageModesty":147,"InsultToModesty":112,"CrueltyByHusbandOrHisRelatives":371,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":32,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"X":0,"kmeansdata.cluster":2}];
+  var svg = dimple.newSvg("#" + opts.id, opts.width, opts.height);
+
+  var myChart = new dimple.chart(svg, data);
+  if (opts.bounds) {
+    myChart.setBounds(opts.bounds.x, opts.bounds.y, opts.bounds.width, opts.bounds.height);//myChart.setBounds(80, 30, 480, 330);
+  }
+  //dimple allows use of custom CSS with noFormats
+  if(opts.noFormats) { myChart.noFormats = opts.noFormats; };
+  //for markimekko and addAxis also have third parameter measure
+  //so need to evaluate if measure provided
+  
+  //function to build axes
+  function buildAxis(position,layer){
+    var axis;
+    var axisopts;
+    if (!layer[position+"Axis"]){
+      axisopts = opts[position+"Axis"];
+    } else axisopts = layer[position+"Axis"];
+    
+    if(axisopts.measure) {
+      axis = myChart[axisopts.type](position,layer[position],axisopts.measure);
+    } else {
+      axis = myChart[axisopts.type](position, layer[position]);
+    };
+    if(!(axisopts.type === "addPctAxis")) axis.showPercent = axisopts.showPercent;
+    if (axisopts.orderRule) axis.addOrderRule(axisopts.orderRule);
+    if (axisopts.grouporderRule) axis.addGroupOrderRule(axisopts.grouporderRule);  
+    if (axisopts.overrideMin) axis.overrideMin = axisopts.overrideMin;
+    if (axisopts.overrideMax) axis.overrideMax = axisopts.overrideMax;
+    if (axisopts.inputFormat) axis.dateParseFormat = axisopts.inputFormat;
+    if (axisopts.outputFormat) axis.tickFormat = axisopts.outputFormat;    
+    return axis;
+  };
+  
+  var c = null;
+  if(d3.keys(opts.colorAxis).length > 0) {
+    c = myChart[opts.colorAxis.type](opts.colorAxis.colorSeries,opts.colorAxis.palette) ;
+  }
+  
+  //allow manipulation of default colors to use with dimple
+  if(opts.defaultColors.length) {
+    opts.defaultColors = opts.defaultColors[0];
+    if (typeof(opts.defaultColors) == "function") {
+      //assume this is a d3 scale
+      //for now loop through first 20 but need a better way to handle
+      defaultColorsArray = [];
+      for (var n=0;n<20;n++) {
+        defaultColorsArray.push(opts.defaultColors(n));
+      };
+      opts.defaultColors = defaultColorsArray;
+    }
+    opts.defaultColors.forEach(function(d,i) {
+      opts.defaultColors[i] = new dimple.color(d);
+    })
+    myChart.defaultColors = opts.defaultColors;
+  }  
+  
+  //do series
+  //set up a function since same for each
+  //as of now we have x,y,groups,data,type in opts for primary layer
+  //and other layers reside in opts.layers
+  function buildSeries(layer, hidden){
+    //inherit from primary layer if not intentionally changed or xAxis, yAxis, zAxis null
+    if (!layer.xAxis) layer.xAxis = opts.xAxis;    
+    if (!layer.yAxis) layer.yAxis = opts.yAxis;
+    if (!layer.zAxis) layer.zAxis = opts.zAxis;
+    
+    var x = buildAxis("x", layer);
+    x.hidden = hidden;
+    
+    var y = buildAxis("y", layer);
+    y.hidden = hidden;
+    
+    //z for bubbles
+    var z = null;
+    if (!(typeof(layer.zAxis) === 'undefined') && layer.zAxis.type){
+      z = buildAxis("z", layer);
+    };
+    
+    //here think I need to evaluate group and if missing do null
+    //as the group argument
+    //if provided need to use groups from layer
+    var s = new dimple.series(myChart, null, x, y, z, c, null, dimple.plot[layer.type], dimple.aggregateMethod.avg, dimple.plot[layer.type].stacked);
+    
+    //as of v1.1.4 dimple can use different dataset for each series
+    if(layer.data){
+      //convert to an array of objects
+      //avoid lodash for now
+      datakeys = d3.keys(layer.data)
+      layer.dataarray = layer.data[datakeys[1]].map(function(d,i){
+        var tempobj = {}
+        datakeys.forEach(function(key){
+          tempobj[key] = layer.data[key][i]
+        })
+        return tempobj
+      })
+      s.data = layer.dataarray;
+    }
+    
+    //for measure axis dimple sorts at the series level not at axis level
+    ['x','y'].map(function(ax){
+      if( layer[ax + 'Axis'].type=="addMeasureAxis" && layer[ax + 'Axis'].orderRule ){
+        if( typeof layer[ax + 'Axis'].orderRule == "string" ){
+          s.addOrderRule( layer[ax + 'Axis'].orderRule );
+        } else if ( typeof layer[ax + 'Axis'].orderRule == "object" ) {
+          s._orderRules = layer[ax + 'Axis'].orderRule;
+        }
+      }
+    })
+    
+    if(layer.hasOwnProperty("groups")) {
+      s.categoryFields = (typeof layer.groups === "object") ? layer.groups : [layer.groups];
+      //series offers an aggregate method that we will also need to check if available
+      //options available are avg, count, max, min, sum
+    }
+    if (!(typeof(layer.aggregate) === 'undefined')) {
+      s.aggregate = eval(layer.aggregate);
+    }
+    if (!(typeof(layer.lineWeight) === 'undefined')) {
+      s.lineWeight = layer.lineWeight;
+    }
+    if (!(typeof(layer.lineMarkers) === 'undefined')) {
+      s.lineMarkers = layer.lineMarkers;
+    }
+    if (!(typeof(layer.barGap) === 'undefined')) {
+      s.barGap = layer.barGap;
+    }    
+    if (!(typeof(layer.interpolation) === 'undefined')) {
+      s.interpolation = layer.interpolation;
+    } 
+    
+    myChart.series.push(s);
+    
+    /*placeholder fix domain of primary scale for new series data
+    //not working right now but something like this
+    //for now just use overrideMin and overrideMax from rCharts
+    for( var i = 0; i<2; i++) {
+      if (!myChart.axes[i].overrideMin) {
+        myChart.series[0]._axisBounds(i==0?"x":"y").min = myChart.series[0]._axisBounds(i==0?"x":"y").min < s._axisBounds(i==0?"x":"y").min ? myChart.series[0]._axisBounds(i==0?"x":"y").min : s._axisBounds(i==0?"x":"y").min;
+      }
+      if (!myChart.axes[i].overrideMax) {  
+        myChart.series[0]._axisBounds(i==0?"x":"y")._max = myChart.series[0]._axisBounds(i==0?"x":"y").max > s._axisBounds(i==0?"x":"y").max ? myChart.series[0]._axisBounds(i==0?"x":"y").max : s._axisBounds(i==0?"x":"y").max;
+      }
+      myChart.axes[i]._update();
+    }
+    */
+      
+    
+    return s;
+  };
+  
+  buildSeries(opts, false);
+  if (opts.layers.length > 0) {
+    opts.layers.forEach(function(layer){
+      buildSeries(layer, true);
+    })
+  }
+  //unsure if this is best but if legend is provided (not empty) then evaluate
+  if(d3.keys(opts.legend).length > 0) {
+    var l =myChart.addLegend();
+    d3.keys(opts.legend).forEach(function(d){
+      l[d] = opts.legend[d];
+    });
+  }
+  //quick way to get this going but need to make this cleaner
+  if(opts.storyboard) {
+    myChart.setStoryboard(opts.storyboard);
+  };
+  myChart.draw();
+
+</script>
+    
+    <script></script>    
+  </body>
+</html>
